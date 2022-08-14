@@ -1,11 +1,11 @@
 let finsishArr =[]
 
 renderJson =(nameOfFile)=>{
-let user = new XMLHttpRequest();
-user.open("GET",nameOfFile,false);
-user.send();
+let xhr = new XMLHttpRequest();
+xhr.open("GET",nameOfFile,false);
+xhr.send();
 
-let response = user.response;
+let response = xhr.response;
 
 let parse = jsonObj => JSON.parse(jsonObj);
 
