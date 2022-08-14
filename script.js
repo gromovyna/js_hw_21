@@ -5,7 +5,7 @@ let user = new XMLHttpRequest();
 user.open("GET",nameOfFile,false);
 user.send();
 
- let response = user.response;
+let response = user.response;
 
 let parse = jsonObj => JSON.parse(jsonObj);
 
